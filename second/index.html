@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Read and update content attributes accordingly  -->
+
+    <meta
+      name="description"
+      content="TheSoundz"
+    />
+
+    <!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="TheSoundz">
+<meta itemprop="description" content="TheSoundz">
+
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="thesoundz.net">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TheSoundz Website">
+<meta property="og:description" this is TheSoundz website made with love and patience">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta property="og:image" content="assets/images/sharing-card.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="thesoundz">
+<meta name="twitter:description" content="Welcome to TheSoundz Website">
+
+
+
+<!-- Update favicon href attribute with image of yourself -->
+   <link rel="shortcut icon" href="./assets/images/The Soundz Logo - White.png" type="image/x-icon">
+
+    <!-- Preloading fonts for better performance -->
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="overlay.css" />
+    <script src="script.js" defer></script>
+    <script src="overlay.js" defer></script>
+    <script src="services.js" defer></script>
+
+    <!-- Your name here -->
+    <title>TheSoundz</title>
+  </head>
+
+  <body>
+
+    
+      
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <!-- <div class="menu-btn-container">
+        <div class="container parent-menu">
+          <button class="menu-btn hidden">
+            <span class="text">Menu</span>
+          </button>
+        </div>
+      </div> -->
+
+
+
+       <div class="menu-btn-container">
+        <div class="container parent-menu">
+          <button class="menu-btn">
+            <a href="../index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#" id="openCardBtn">Services</a>
+            <a href="../photos/index.html">Gallery</a>
+            <a href="https://www.youtube.com/@musicfusionafrica2965">Dj-Mix</a>
+            <a href="#contact">Contact</a>
+          </button>
+        </div>
+      </div> 
+      
+      <!-- <nav class="nav ">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="/index.html"></a></li>
+          <li class="nav-item"><a href="#work"></a></li>
+          <li class="nav-item"><a href="/Responsive-Video-Playlist/index.html"></a></li>
+          <li class="nav-item"><a href="#skills"></a></li>
+          <li class="nav-item">
+            <a href="#contact" aria-data="last-focused"></a>
+          </li>
+        </ol>
+      </nav> -->
+
+      <div class="about-us-container" id="about">
+        <h1>ABOUT US</h1>
+        <p class="about-description">
+          The Soundz 'Duson' Ltd trading as an events management company with a professional and creative team of event management specialists. it has over 8years of experience producing high-quality events of every type and scale.
+        </p>
+        
+        <div class="card-containered">
+            <div class="card">
+                <h2>Mission</h2>
+                <p>To be the leading innovation and proffesional event management company with focus on detail.</p>
+            </div>
+            <div class="card">
+                <h2>Vision</h2>
+                <p>To create alluring memories with our clients by using only the best principles, practices and equipment as we capture the audience.</p>
+            </div>
+            <div class="card">
+                <h2>Core Values</h2>
+                <p>Honesty</p>
+                <p>Integrity</p>
+                <p>Quality Service</p>
+                <p>Team work</p>
+            </div>
+        </div>
+    </div>
+
+
+  <div id="boxer">
+     <div class="cardo">
+          <img class="photo" src="./assets/images/LOGOS/The Soundz Logo - Black.jpg"  alt="">
+
+ <div>
+  <h2>Main Pages</h2>
+  <h3>What Do You Want To See?</h3>
+
+  <div class="btn-group">
+    <a href="../index.html" class="secondary">HOME</a>
+    <button class="primary">Back To Homepage</button>
+  </div>
+
+  <div class="btn-group">
+    <a href="#about" class="secondary">ABOUT</a>
+    <button class="primary">About TheSoundz</button>
+  </div>
+  <div class="btn-group">
+    <a href="../photos/index.html" class="secondary">GALLERY</a>
+    <button class="primary">Selected Photos</button>
+  </div>
+
+  <div class="btn-group">
+    <a href="../playlist/index.html" class="secondary">MIXES</a>
+    <button class="primary">Music Mixtapes</button>
+  </div>
+
+  <div class="btn-group">
+    <a href="#contact" class="secondary ">CONTACT</a>
+    <button class="primary">Reach Out</button>
+  </div>
+</div>
+
+    </div>
+  </div>
+  
+</header>
+<!-- <div id="overlay" class="overlay">
+  <div class="card">
+    <h2>Choose Service</h2>
+    <div class="buttons">
+      <button class="card-btn">Sound Systems</button>
+      <button class="card-btn">Lights</button>
+      <button class="card-btn">Stages</button>
+      <button class="card-btn">Screens</button>
+      <button class="card-btn">Button 5</button>
+      <button class="card-btn">Button 6</button>
+    </div>
+  </div>
+</div> -->
+
+<div id="overlay" class="overlay">
+  <div class="card">
+    <h2>Available Service</h2>
+    <div class="buttons">
+      <button class="card-btn" id="soundBtn">Sound Systems</button>
+      <button class="card-btn" id="lightsBtn">Lights</button>
+      <button class="card-btn" id="stagesBtn">Stages</button>
+      <button class="card-btn" id="screensBtn">Screens</button>
+      <!-- <button class="card-btn" id="btn5">Button 5</button> -->
+      <!-- <button class="card-btn" id="btn6">Button 6</button> -->
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <main>
+     
+      
+
+
+      <section class="work" id="work">
+        <div class="container">
+          <h2 class="h2" id="work">Our Services</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Public Address Sound System</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  Every event requires acertain sound pressure not to iritate the atendies. With our professional staff we carryout site visits in order to come up with the most appropriate combination of equipment to thrill through the minds of the listeners . 
+                </p>
+                <!-- Add technologies you used to build the project -->
+
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="./assets/images/LOGOS/The Soundz Logo - White.png" target="_blank" rel="noopener" class="link"
+                    >CheckOut Our Sound Systems</a
+                  >
+
+                  <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="./assets/images/LOGOS/The Soundz Logo - White.png"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+
+         <!-- Update img src and alt attribute  -->
+
+              <picture class="work-img">
+               <a href="#">
+                 <img
+                class="img-work"
+                  loading="lazy"
+                      src="./assets/images/Sound/PA/IMG_8837.png"
+                  alt="Gitpod"
+                />
+               </a>
+              </picture>
+            </div>
+
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Line Array</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  Every event requires a certain sound pressure not to iritate the attendies. With our professional staff we carryout site visits in order to come up with the most appropriate combination of equipment to thrill through the minds of the listeners . 
+                </p>
+                <!-- Add technologies you used to build the project -->
+
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="https://gitpod.io" target="_blank" rel="noopener" class="link"
+                    >CheckOut Our Sound Systems</a
+                  >
+
+                  <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="./assets/images/LOGOS/The Soundz Logo - White.png"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+
+         <!-- Update img src and alt attribute  -->
+
+              <picture class="work-img">
+               <a href="#">
+                 <img
+                class="img-work"
+                  loading="lazy"
+                      src="./assets/images/Sound/Line Array/IMG_4958.png"
+                  alt="Gitpod"
+                />
+               </a>
+              </picture>
+            </div>
+
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">LED Screens</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  Today an event without LED screens is not a
+                  complete event, that is why at The Soundz we provide you with screens of multiple configurations and design to fit the theme of your event.                </p>
+                <!-- Add technologies you used to build the project -->
+                
+
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="#" target="_blank" rel="noopener" class="link"
+                    >CheckOut Our LED Screens</a
+                  >
+
+                  <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="./assets/images/LOGOS/The Soundz Logo - White.png"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+
+         <!-- Update img src and alt attribute  -->
+
+              <picture class="work-img">
+               <a href="#">
+                 <img
+                class="img-work"
+                  loading="lazy"
+                  src="./assets/images/Sound/PA/8. Cocktail Simple setup.png"
+                  alt="agency elevation"
+                />
+               </a>
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Stage Design and Setup</h3>
+                <!-- Add small description of your project  -->
+
+                <p class="work-text">Each event has its own unique considerations as
+                  regards “the mood and tone”-(Call it the theme). With our team, we carefully put together creative ideas to maximize positive impact our design has to the audience . When all elementary elements of the stage design come together for an event with a cause for an applause, you are honouring the reason for the event and all the people involved </p>
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="#" target="_blank" rel="noopener" class="link"
+                    >CheckOut Our Stages</a
+                  >
+
+                     <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="./assets/images/LOGOS/The Soundz Logo - White.png"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <a href="#">
+                  <img
+                class="img-work"
+                  loading="lazy"
+                  src="./assets/images/Stage/IMG_4929.png"
+                  alt="portfolio template"
+                />
+                </a>
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">LED Lights</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  get the best led light on your event and light as thou its day
+                </p>
+               
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="#" target="_blank" rel="noopener" class="link"
+                    >CheckOut Our LED Lights</a
+                  >
+
+                   <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  <a
+                      src="#"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                    class="img-work"
+                      src="./assets/images/LOGOS/The Soundz Logo - White.png"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <a href="#">
+                <img
+                  loading="lazy"
+                  src="./assets/images/Sound/PA/7. Wedding Setup.png"
+                  alt="contribute dev"
+                />
+                </a>
+                
+              </picture>
+            </div>
+          </div> 
+        </div>
+      </section>
+
+      <!-- I write blog posts on dev.to at https://dev.to/devsyedmohsin. I have linked my articles accordingly, so please update the article title, description, and link accordingly. For example, if you write an article on Medium, link your article to Medium. Also, don't forget to update the reaction count. -->
+      
+      <section class="article">
+        <div class="container">
+          <h2 class="h2" id="blog">YouTube Mixes</h2>
+          <div class="article-boxes">
+            <article class="article-box featured-article">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h3">
+                    Curated mixes to elevate your event experience
+                  </h3>
+                  <p class="article-text">
+                    Discover a curated selection of YouTube mixes that set the perfect tone for any occasion. From upbeat party anthems to relaxing acoustic sessions, find the ideal soundtrack for your moments.
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="#" class="link" target="_blank" rel="noopener"
+                    >CheckOut Mixes</a
+                  >
+                  <span class="reaction-count">
+                    <img src="./assets/images/heart-outline.svg" alt="heart" />
+                    412
+                  </span>
+                </div>
+              </div>
+              <picture class="article-illustration">
+                <picture class="article-illustration">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/GcTVpPuH-7k" title="DJ REMIX SONG 2024 - Mashups &amp; Remixes of Popular Songs 2024 | Club Music DJ Remix Party Mix 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </picture>
+              </picture>
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">Hip-Hop Hits.</h3>
+                  <p class="article-text">
+                    Experience the pulse of the streets with our handpicked Hip-Hop mixes. From classic beats to the latest tracks, get ready to groove to the rhythm of the urban soundscape.
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="#" class="link" target="_blank" rel="noopener"
+                    >CheckOut Mixes</a
+                  >
+                  <span class="reaction-count">
+                    <img
+                      src="./assets/images/heart-outline.svg"
+                      alt="heart"
+                      loading="lazy"
+                    />
+                    47
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">
+                    RnB Vibes ✨
+                  </h3>
+                  <p class="article-text">
+                    Immerse yourself in smooth rhythms and soulful melodies with our RnB mixes. Perfect for setting a relaxed, sophisticated mood at any event.
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="#" class="link" target="_blank" rel="noopener"
+                    >CheckOut Mixes</a
+                  >
+                  <span class="reaction-count">
+                    <img
+                      src="./assets/images/heart-outline.svg"
+                      alt="heart"
+                      loading="lazy"
+                    />
+                    372
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">
+                    Jazz Essentials
+                  </h3>
+                  <p class="article-text">
+                    Enjoy the timeless elegance of Jazz with our carefully selected mixes. From mellow tunes to lively improvisations, our Jazz collection adds a touch of class to any occasion.
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="#" class="link" target="_blank" rel="noopener"
+                    >CheckOut Mixes</a
+                  >
+                  <span class="reaction-count">
+                    <img
+                      src="./assets/images/heart-outline.svg"
+                      alt="heart"
+                      loading="lazy"
+                    />
+                    372
+                  </span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
+
+      <section class="skills">
+        <div class="container">
+          <h2 class="h2" id="skills">Gallery</h2>
+          <div class="skills-imgs">
+                <img src="./assets/images/MAIN flip pics/IMG_4934.png" alt="React" class="skills-img" loading="lazy" title="React">
+                <img src="./assets/images/Sound/PA/IMG_1489.png" alt="Svelte" class="skills-img" loading="lazy" title="Svelte">
+                 <img src="./assets/images/Sound/Line Array/IMG_9870.png" alt="Typescript" class="skills-img" loading="lazy" title="Typescript">
+                 <img src="./assets/images/Stage/IMG_20220721_192913.jpg" alt="Accessibility" class="skills-img" loading="lazy" title="Web Accessibility">
+                 <img src="./assets/images/Sound/Line Array/IMG_4957.png" alt="Shell" class="skills-img" loading="lazy" title="Shell">
+                 <img src="./assets/images/Stage/IMG-20230512-WA0041(1).jpg" alt="NextJS" class="skills-img" loading="lazy" title="NextJS">
+                 <img src="./assets/images/MAIN flip pics/IMG_4934.png" alt="Git" class="skills-img" loading="lazy" title="Git">
+                 <img src="./assets/images/Stage/IMG-20230512-WA0044.jpg" alt="CSS" class="skills-img" loading="lazy" title="CSS">
+                 <img src="./assets/images/Sound/Line Array/IMG_2389.png" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+            </figure>
+          </div>
+        </div>
+      </section>
+      
+      <section class="client">
+        <div class="container">
+          <h2 class="h2">Trusted by</h2>
+         <div class="logos">
+          <!-- Replace alt with client/company name and src attributes of images with path to relative img of client logo -->
+          <div class="logo-group">
+            <img loading="lazy" src="assets/images/trusted-by/stripe.svg" alt="Ideacraft" class="logo hide to-top" />
+
+            <img loading="lazy" src="assets/images/trusted-by/datastax.svg" alt="Golden grid" class="logo" />
+
+            <img loading="lazy" src="assets/images/trusted-by/coke.svg" alt="Theia" class="logo hide to-bottom" />
+          </div>
+          <div class="logo-group">
+            <img loading="lazy" src="assets/images/trusted-by/gm.svg" alt="General motors" class="logo hide to-top" />
+
+            <img loading="lazy" src="assets/images/trusted-by/shares.svg" alt="Chippy" class="logo" />
+            <img loading="lazy" src="assets/images/trusted-by/shopify.svg" alt="Shopify" class="logo hide to-bottom" />
+          </div>
+          <div class="logo-group">
+            <img loading="lazy" src="assets/images/trusted-by/agency-elevation.svg" alt="Agency elevation"
+              class="logo hide to-top" /><img loading="lazy" src="assets/images/trusted-by/gitlab.svg" alt="Ron jones"
+              class="logo" /><img loading="lazy" src="assets/images/trusted-by/duolingo.svg" alt="Mighty furniture's"
+              class="logo hide to-bottom" />
+          </div>
+          <div class="logo-group">
+            <img loading="lazy" src="assets/images/trusted-by/coyote.svg" alt="Bulls eye" class="logo hide to-top" />
+            <img loading="lazy" src="assets/images/trusted-by/astrato.svg" alt="Chippy" class="logo" />
+            <img loading="lazy" src="assets/images/trusted-by/mercado.svg" alt="Fastlane" class="logo hide to-bottom" />
+          </div>
+        </div>
+        </div>
+      </section>
+      <!-- Replace testimonials, author name, author job, img src and, alt attributes -->
+
+      <section class="recommendations container">
+        <h2 class="h2">Testimonials</h2>
+        <div class="testimonials cards">
+          <li class="testimonial card">
+            <blockquote class="testimonial-text">
+              &ldquo; TheSoundz transformed our event with their exceptional planning and music selection. Every detail was perfect, and the energy was unmatched. Truly a top-notch team. Highly recommended! &ldquo;
+            </blockquote>
+            <figure class="testimonial-author">
+              <img
+                src="assets/images/person-crop-circle-fill-svgrepo-com.svg"
+                alt="Adam Argalye"
+                loading="lazy"
+              />
+              <figcaption>
+                <!-- <h3 class="testimonial-author-name">Samantha Lee</h3> -->
+                <!-- <p class="testimonial-author-job">Head of upvet community</p> -->
+              </figcaption>
+            </figure>
+          </li>
+          <li class="testimonial card">
+            <blockquote class="testimonial-text">
+              &ldquo; Working with TheSoundz was a breeze. They made our corporate event unforgettable with their impeccable organization and vibrant music. A fantastic experience from start to finish! &ldquo;           </blockquote>
+            <figure class="testimonial-author">
+              <img
+                src="assets/images/person-crop-circle-fill-svgrepo-com.svg"
+                alt="Val Head"
+                loading="lazy"
+              />
+              <figcaption>
+                <!-- <h3 class="testimonial-author-name">Pauline Narvas</h3> -->
+                <!-- <p class="testimonial-author-job">Head of Gitpod Community</p> -->
+              </figcaption>
+            </figure>
+          </li>
+          <li class="testimonial card">
+            <blockquote class="testimonial-text">
+              &ldquo; TheSoundz delivered beyond our expectations for our wedding. Their attention to detail and creative touches made our special day even more memorable. A pleasure to work with &ldquo;
+            </blockquote>
+            <figure class="testimonial-author">
+              <img
+                src="assets/images/person-crop-circle-fill-svgrepo-com.svg"
+                alt="Adam Argalye"
+                loading="lazy"
+              />
+              <figcaption>
+                <!-- <h3 class="testimonial-author-name">Adam Argalye</h3> -->
+                <!-- <p class="testimonial-author-job">Engineer @Google</p> -->
+              </figcaption>
+            </figure>
+          </li>
+          <li class="testimonial card">
+            <blockquote class="testimonial-text">
+              &ldquo; TheSoundz took our private party to the next level with their expert event planning and flawless execution. They brought our vision to life with style and professionalism. &ldquo;
+            </blockquote>
+            <figure class="testimonial-author">
+              <img
+                src="assets/images/person-crop-circle-fill-svgrepo-com.svg"
+                alt="Val Head"
+                loading="lazy"
+              />
+              <figcaption>
+                <!-- <h3 class="testimonial-author-name">Val Head</h3> -->
+                <!-- <p class="testimonial-author-job">CEO @Engines</p> -->
+              </figcaption>
+            </figure>
+          </li>
+          <li class="testimonial card card1 hid">
+            <blockquote class="testimonial-text">
+              &ldquo; From start to finish, TheSoundz was amazing. They handled everything with precision, and the music was perfect for our charity gala. Their expertise truly shined! &ldquo;
+            </blockquote>
+            <figure class="testimonial-author">
+              <img
+                src="assets/images/person-crop-circle-fill-svgrepo-com.svg"
+                alt="Brian Hirsh"
+                loading="lazy"
+              />
+              <figcaption>
+                <!-- <h3 class="testimonial-author-name">Brian Hirsh</h3> -->
+                <!-- <p class="testimonial-author-job">Head @Zero-in</p> -->
+              </figcaption>
+            </figure>
+          </li>
+          <li class="testimonial card card2 hid">
+            <blockquote class="testimonial-text">
+              &ldquo; TheSoundz exceeded our expectations for our company retreat. Their creative ideas and seamless coordination made the event a huge success. We couldn’t have asked for more! &rdquo;
+            </blockquote>
+            <figure class="testimonial-author">
+              <img
+                src="assets/images/person-crop-circle-fill-svgrepo-com.svg"
+                alt="Rich Harris"
+                loading="lazy"
+              />
+              <figcaption>
+                <!-- <h3 class="testimonial-author-name">Rich Harris</h3> -->
+                <!-- <p class="testimonial-author-job">Creator of Svelte</p> -->
+              </figcaption>
+            </figure>
+          </li>
+          <div class="trans"></div>
+          <div class="btn-show">
+            <span class="btn btn-trans btn-cta">SHOW MORE</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-me" id="contact">
+        <h2 class="h2">C.E.O</h2>
+        <h1 class="h1">Nathan Epudu</h1>
+        <div class="about-me-info">
+          <img src="./assets/images/nathan.png" alt="Sayyed Asad's image" class="me">
+          <div class="info-parent">
+          <p class="info">
+            Nathan is a dynamic and visionary leader who serves as the Chief Executive Officer(CEO) of The Soundz ‘DuSon’ Limited. With a remarkable end of industry expertise, strategic thinking, and strong leadership skills, Nathan has been instrumental indriving the success and growth of the company.
+          </p>
+       <div class="working-for">
+        <p>With a remarkable blend of industry expertise, strategic thinking, and strong leadership skills, Nathan has been instrumental indriving the success and growth of the company.</p>
+</div>
+        <p>For more Information catch me on </p>
+        <a href="https://wa.me/0702930759" class="for-working about-link">WhatsApp</a>
+
+        <p class="info">I'm available for consultation.</p>
+          </div>
+        </div>
+        <div><a class="btn btn-cta" href="#" target="_blank" rel="noopener noreferrer">Get My Resume</a></div>
+      </section>
+
+      <section class="contact container" >
+        <div class="container">
+          <h2 class="h2" id="contact">Send Message</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <!-- Please comment this component if you're not available for hire -->
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Available for hire
+              </strong>
+              <p class="contact-text">
+                At The Soundz, we specialize in creating unforgettable events that are tailored to your unique vision. Whether it's a wedding, corporate event, or private party, our dedicated team of professionals is here to bring your dreams to life. 
+              </p>
+              <p class="contact-text">
+                Contact us today to start planning your perfect event!
+              </p>
+              <!-- Replace src with your signatures and name -->
+              <img
+                src="./assets/images/scan.png"
+                alt="SAU"
+                class="signatures"
+                loading="lazy"
+              />
+            </div>
+            <form action="#" class="contact-form" netlify>
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  inputmode="email"
+                />
+              </div>
+              <div class="form-field">
+                <label for="message"> Message</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-cta">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Update href and src attributes -->
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="#" target="_blank" rel="noopener"
+                  ><img class="none"
+                    loading="lazy"
+                    src="./assets/images/LOGOS/The Soundz Logo - White.png"
+                    alt="GitHub"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="gmail" href="mailto: info@thesoundz.net" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/mail.svg"
+                    alt="Codepen"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Linkedin" href="https://www.linkedin.com/in/thesoundz/" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/linkedin.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Twitter" href="https://twitter.com/thesoundz" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/twitter.svg"
+                    alt="Twitter"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="WhatsApp" href="https://wa.me/0702930759 " target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/logo-whatsapp.svg"
+                    alt="Twitter"
+                /></a>
+              </li>
+              
+            </ol>
+          </nav>
+          <!-- <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label> -->
+        </div>
+        <p class="footer-text">
+            &copy; 2024 </a>
+          </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
